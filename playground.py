@@ -1,8 +1,8 @@
 import time
 
-n = 21971
-e = 131
-d = 17867
+n = 52993
+e = 6977
+d = 51873
 
 message = 'Hello World!'
 encrypted_message = ''
@@ -51,18 +51,7 @@ for x in message:
 print encrypted_message2
 
 
-#########Encryption v2#########
-for t in encrypted_message2:
-    if t in LUT_decryption:
-        decrypted_message2 += LUT_decryption[t]
-    else:
-        numerize = ord(t)
-        decrypt = pow(numerize, d, n)
-        denumerize = chr(decrypt)
-        decrypted_message2 += denumerize
-        LUT_decryption[t] = denumerize
 
-print decrypted_message2
 end = time.time()
 
 print(end - start)
