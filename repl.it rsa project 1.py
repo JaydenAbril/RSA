@@ -1,4 +1,10 @@
-         encrypted_message += LUT_encryption[x]
+def encrypt(e,n):
+    encrypted_message = ''
+    LUT_encryption = dict()
+    message = input("")
+    for x in message:
+        if x in LUT_encryption:
+            encrypted_message += LUT_encryption[x]
         else:
             numerize = ord(x)
             encrypt = pow(numerize, e, n)
@@ -23,17 +29,15 @@ def decrypt(d,n):
     
     print (decrypted_message)
     
-def RSA():
-  print ("Do you want to encrypt, decrypt, or exit?")
-  while input = ("Exit") or input = ("exit")
- 
-  if 
-    input = encrypt
-    print ("what is your e value?"): input("")
-    print ("What is your n value?"): input("")
-  
-  elif:
-    input = decrypt
-    print ("what is your d value?"): input("")
-          ("What is your n value?"): input("")
-  print ("Program Complete")
+    variable = input
+    while 
+      print ("Do you want to encrypt, decrypt, or exit?")
+      if input = encrypt
+        print ("what is your e value?"): input("")
+        print ("What is your n value?"): input("")
+        
+       elif:
+        input = decrypt
+        print ("what is your d value?"): input("")
+              ("What is your n value?"): input("")
+        print ("Program Complete")
