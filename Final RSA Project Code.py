@@ -1,12 +1,12 @@
-def project():
+def RSA():
   leave = True
   encrypted_message = ''
   decrypted_message = ''
   while leave == True:
     print ("Do you want to encrypt, decrypt or leave?")
-    inpoot = input()
+    inpot = input()
 
-    if inpoot == "encrypt":
+    if inpot == "encrypt":
       print ("What is your e value?")
       evalue = input()
       print ("What is your n value?")
@@ -20,7 +20,7 @@ def project():
         encrypted_message += denumerize
       print (encrypted_message)
       
-    if inpoot == "decrypt":
+    if inpot == "decrypt":
       print ("What is your d value?")
       dvalue = input()
       print("What is your n value?")
@@ -34,10 +34,10 @@ def project():
          decrypted_message += denumerize
       print (decrypted_message)
         
-    if inpoot == "leave":
+    if inpot == "leave":
       break
       
-project()
+RSA()
       
 
     
